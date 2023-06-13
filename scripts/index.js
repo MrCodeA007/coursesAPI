@@ -3,3 +3,9 @@ fetch(`http://localhost:8081/api/courses`)
 .then((data) => { 
     console.log(data);
 })
+
+const newCoBtnEl = document.getElementById(`newCoBtn`);
+
+newCoBtnEl.addEventListener(`click`, () => {
+    window.location.href = `newcourse.html`
+})
